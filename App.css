@@ -1,0 +1,119 @@
+.app {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.title {
+  color: #d63384;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.role-input {
+  width: 200px;
+  padding: 5px;
+}
+
+.divider {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #d63384;
+  margin: -10px 0 20px;
+}
+
+.role-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "administrator study-personnel"
+    "study-director qa-reviewer"
+    "disabled update-button";
+    margin-bottom: 0;
+  gap: 15px;
+  width: 100%;
+}
+
+.administrator {
+  grid-area: administrator;
+  background-color: #f8d7f2;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.study-personnel {
+  grid-area: study-personnel;
+  background-color: #f8d7f2;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.study-director {
+  grid-area: study-director;
+  background-color: #f8d7f2;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.qa-reviewer {
+  grid-area: qa-reviewer;
+  background-color: #f8d7f2;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.disabled {
+  grid-area: disabled;
+  background-color: #f8d7f2;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.update-button {
+  grid-area: update-button;
+  background-color: #8a2be2;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  justify-self: end;
+}
+
+.update-button:hover {
+  background-color: #7a1ad4;
+}
+
+
+.role-section-container button {
+  background-color: #8a2be2;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.role-section-container button:hover {
+  background-color: #7a1ad4;
+}

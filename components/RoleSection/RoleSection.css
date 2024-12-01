@@ -1,0 +1,53 @@
+/* RoleSection.css */
+.role-section {
+  background-color: #f8d7f2;
+  padding: 10px; 
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin: 10px 0pc 10pc;
+  transition: background-color 0.3s;
+}
+
+.study-personnel,
+.qa-reviewer {
+  padding: 0; /* Remove extra padding */
+  display: inline-block; /* Fit width to content */
+  width: auto; /* Width adjusts to content */
+  height: auto /* Height adjusts to content */
+}
+
+.role-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.permissions {
+  margin-top: 5px;
+}
+
+.permission-item {
+  display: flex;
+  margin: 3px 0;
+}
+
+.highlight {
+  background-color: #d63384;
+  color: #fff;
+}
+
+.role-section-container p {
+  font-size: 13px;
+  color: #666;
+  margin: -36px 2pc 1pc 157px /* Space between description and permissions */
+}
+
+
+
+.role-section-container ul {
+  margin-bottom: 20px; /* Adjust this value for the desired spacing */
+}
+
+.role-section-container ul:last-child {
+  margin-bottom: 0; /* Remove margin for the last ul if you don't want extra space at the end */
+}
